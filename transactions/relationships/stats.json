@@ -1,0 +1,10 @@
+[
+    "MATCH (a:games), (b:stat_player_game_def) WHERE a.game_code=b.game_code MERGE (b)-[r:game_stat]->(a)",
+    "MATCH (a:games), (b:stat_player_game_kick) WHERE a.game_code=b.game_code MERGE (b)-[r:game_stat]->(a)",
+    "MATCH (a:games), (b:stat_player_game_return) WHERE a.game_code=b.game_code MERGE (b)-[r:game_stat]->(a)",
+    "MATCH (a:games), (b:stat_player_game_off) WHERE a.game_code=b.game_code MERGE (b)-[r:game_stat]->(a)",
+    "MATCH (a:games), (b:stat_player_game_pass_adv) WHERE a.game_code=b.game_code MERGE (b)-[r:game_stat]->(a)",
+    "MATCH (a:games), (b:stat_player_game_rush_adv) WHERE a.game_code=b.game_code MERGE (b)-[r:game_stat]->(a)",
+    "MATCH (a:games), (b:stat_player_game_rec_adv) WHERE a.game_code=b.game_code MERGE (b)-[r:game_stat]->(a)",
+    "MATCH (a:games), (b:stat_player_game_def_adv) WHERE a.game_code=b.game_code MERGE (b)-[r:game_stat]->(a)"
+]
